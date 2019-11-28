@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <link rel="icon" href="images/seo-12-512.png" />
+        <link
+            href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+            rel="stylesheet"
+            integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+            crossorigin="anonymous"
+        />
+        <link
+            href="//db.onlinewebfonts.com/c/c4be6a3aa4e77579c1c738e268511125?family=Sudbury+Light"
+            rel="stylesheet"
+            type="text/css"
+        />
+        <link rel="stylesheet" href="css/style.css" />
+        <title>Todo App</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="main">
+                <form class="add-tasks">
+                    <span>Task List</span>
+                    <div class="new-task">
+                        <label for="task">New Task</label>
+                        <input
+                            type="text"
+                            name="tasks"
+                            id="task"
+                            placeholder="Add new task..."
+                        />
+                    </div>
+                    <input type="submit" value="Add Task" class="submit" />
+                </form>
+                <div class="result">
+                    <h5>Tasks</h5>
+                    <div class="filter">
+                        <label for="filter"></label>
+                        <input
+                            type="text"
+                            name="filter"
+                            id="filter"
+                            placeholder="Filter Tasks"
+                        />
+                    </div>
+                    <div class="content">
+                        <ul class="collection"></ul>
+                    </div>
+                    <a href="#" class="clear-tasks">Clear Tasks</a>
+                </div>
+            </div>
+        </div>
+        <script src="js/script.js"></script>
+    </body>
+</html>
