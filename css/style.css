@@ -132,6 +132,10 @@ input.submit {
     color: orangered;
 }
 
+.delete-img {
+    width: 10px;
+}
+
 .edit-item {
     cursor: copy;
 }
