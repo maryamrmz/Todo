@@ -37,7 +37,6 @@ body {
 .main {
     width: 70%;
     height: auto;
-    min-height: 500px;
     margin: 5% auto;
     padding: 3%;
     border: 1px solid rgb(187, 183, 183);
@@ -87,7 +86,6 @@ input.submit {
     position: absolute;
     top: 75%;
     border: none;
-    border-radius: 5px;
     box-shadow: 0 0 2px rgb(95, 210, 1);
     color: white;
     background-color: rgb(95, 210, 1);
@@ -101,23 +99,9 @@ input.submit {
 }
 
 .content {
-    margin: 5% 0;
+    margin: 3% 0;
     display: flex;
     flex-direction: column;
-}
-
-#filter {
-    width: 100%;
-    height: 100%;
-    font-family: inherit;
-    border: none;
-    border-bottom: 1px solid rgb(187, 183, 183);
-    outline: none;
-    margin-bottom: 2%;
-    margin-top: 2%;
-    padding: 5px 0;
-    display: flex;
-    justify-content: space-between;
 }
 
 .collection-list {
@@ -134,21 +118,4 @@ input.submit {
 
 .delete-img {
     width: 10px;
-}
-
-.edit-item {
-    cursor: copy;
-}
-
-.clear-tasks {
-    width: fit-content;
-    width: -moz-fit-content;
-    font-family: inherit;
-    border: none;
-    border-radius: 5px;
-    box-shadow: 0 0 2px rgb(255, 48, 48);
-    padding: 1% 2%;
-    color: white;
-    background-color: rgb(255, 48, 48);
-    cursor: pointer;
 }
