@@ -1,11 +1,8 @@
-<<<<<<< HEAD
 * {
     padding: 0;
     margin: 0;
 }
 
-=======
->>>>>>> e116b959938e28599926bddd2ae7391076f41c01
 .main {
     width: 70%;
     margin: 5% auto 0;
@@ -36,7 +33,6 @@
     list-style: none;
 }
 
-<<<<<<< HEAD
 #taskList a img {
     width: 18px;
     height: 18px;
@@ -102,9 +98,3 @@
     border-bottom: 2px solid pink;
     padding-bottom: 5px;
 }
-=======
-.task {
-    padding: 1% 0;
-    margin-bottom: 1%;
-}
->>>>>>> e116b959938e28599926bddd2ae7391076f41c01
