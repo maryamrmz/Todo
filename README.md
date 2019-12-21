@@ -1,1 +1,1 @@
-# Todo
+A very simple todo app.

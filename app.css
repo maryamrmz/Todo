@@ -1,0 +1,100 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.main {
+    width: 70%;
+    margin: 5% auto 0;
+    padding: 3%;
+    border: 1px solid rgb(187, 183, 183);
+    box-shadow: 0 0 10px rgb(187, 183, 183);
+}
+
+#taskInput {
+    padding: 5px 0;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid;
+    width: 100%;
+    margin-bottom: 25px;
+}
+
+.submit {
+    padding: 1% 2%;
+    border: none;
+    box-shadow: 0 0 2px rgb(95, 210, 1);
+    color: white;
+    background-color: rgb(95, 210, 1);
+    cursor: pointer;
+}
+
+#taskList {
+    list-style: none;
+}
+
+#taskList a img {
+    width: 18px;
+    height: 18px;
+}
+
+.task {
+    padding: 2% 2% 0;
+    margin-bottom: 1%;
+    display: flex;
+    justify-content: space-between;
+    color: coral;
+    font-weight: bold;
+}
+
+.links {
+    display: flex;
+    justify-content: space-between;
+    width: 85px;
+}
+
+.links a {
+    cursor: pointer;
+}
+
+.completed {
+    text-decoration: line-through;
+    font-style: italic;
+    color: mediumseagreen;
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.buttons a {
+    width: 15%;
+    min-width: 100px;
+    margin: 20px 0;
+}
+
+.buttons input {
+    color: #fff;
+    background: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    height: 40px;
+    background: rgb(187, 183, 183);
+    width: 100%;
+}
+
+.buttons input:hover {
+    background: cadetblue;
+}
+
+.task span input {
+    color: crimson;
+    outline: none;
+    border: none;
+    border-bottom: 2px solid pink;
+    padding-bottom: 5px;
+}
