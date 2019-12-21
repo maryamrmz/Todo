@@ -3,6 +3,12 @@
     margin: 0;
 }
 
+body {
+    color: #5e847e;
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 .main {
     width: 70%;
     margin: 5% auto 0;
@@ -15,17 +21,17 @@
     padding: 5px 0;
     border: none;
     outline: none;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid rgb(71, 238, 230);
     width: 100%;
     margin-bottom: 25px;
 }
 
 .submit {
     padding: 1% 2%;
-    border: none;
-    box-shadow: 0 0 2px rgb(95, 210, 1);
-    color: white;
-    background-color: rgb(95, 210, 1);
+    border: 1px solid rgb(71, 238, 230);
+    border-radius: 40px;
+    outline: none;
+    background: none;
     cursor: pointer;
 }
 
@@ -71,24 +77,24 @@
 }
 
 .buttons a {
-    width: 15%;
+    width: 10%;
     min-width: 100px;
     margin: 20px 0;
 }
 
 .buttons input {
-    color: #fff;
     background: none;
     outline: none;
-    border: none;
     cursor: pointer;
     height: 40px;
-    background: rgb(187, 183, 183);
+    border: 1px solid rgb(71, 238, 230);
+    border-radius: 40px;
     width: 100%;
 }
 
 .buttons input:hover {
-    background: cadetblue;
+    transition: all 0.5s;
+    transform: scale(1.1);
 }
 
 .task span input {
