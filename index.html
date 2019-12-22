@@ -10,7 +10,7 @@
             <form
                 class="task-form"
                 onsubmit="event.preventDefault();addTask()"
-                onclick="three('all')"
+                onclick="buttons('all')"
             >
                 <input
                     id="taskInput"
@@ -20,13 +20,13 @@
                 <input type="submit" value="Add Task" class="submit" />
             </form>
             <div class="buttons">
-                <a href="#" class="all" onclick="three('all')"
+                <a href="#" class="all" onclick="buttons('all')"
                     ><input type="button" value="All"
                 /></a>
-                <a href="#" class="active" onclick="three('active')"
+                <a href="#" class="active" onclick="buttons('active')"
                     ><input type="button" value="Active"
                 /></a>
-                <a href="#" class="completed" onclick="three('complete')"
+                <a href="#" class="completed" onclick="buttons('complete')"
                     ><input type="button" value="Completed"
                 /></a>
             </div>

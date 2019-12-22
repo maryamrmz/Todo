@@ -93,8 +93,12 @@ body {
 }
 
 .buttons input:hover {
-    transition: all 0.5s;
+    transition: all 0.25s;
     transform: scale(1.1);
+}
+
+.buttons input:focus {
+    background: rgb(180, 248, 245);
 }
 
 .task span input {

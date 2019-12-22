@@ -112,7 +112,7 @@ function changesLi(e) {
     }
 }
 
-function three(e) {
+function buttons(e) {
     switch (e) {
         case "all":
             document.querySelectorAll(".done").forEach(el => {
