@@ -11,7 +11,8 @@ var taskInput = document.getElementById("taskInput"),
     taskList = document.getElementById("taskList"),
     all = document.querySelector(".all"),
     active = document.querySelector(".active"),
-    completed = document.querySelector(".completed");
+    completed = document.querySelector(".completed"),
+    filter = 0;
 
 taskList.addEventListener("click", changesLi);
 
@@ -112,9 +113,10 @@ function changesLi(e) {
     }
 }
 
-function buttons(e) {
-    switch (e) {
+function buttons(event) {
+    switch (event) {
         case "all":
+            filter = 0;
             document.querySelectorAll(".done").forEach(el => {
                 el.parentElement.parentElement.style.display = "flex";
             });
@@ -123,20 +125,38 @@ function buttons(e) {
             });
             break;
         case "active":
-            document.querySelectorAll(".done").forEach(el => {
-                el.parentElement.parentElement.style.display = "none";
-            });
+            filter = 1;
             document.querySelectorAll(".undo").forEach(el => {
                 el.parentElement.parentElement.style.display = "flex";
+            });
+            document.querySelectorAll(".done").forEach(el => {
+                el.parentElement.parentElement.style.display = "none";
             });
             break;
-        case "complete":
-            document.querySelectorAll(".undo").forEach(el => {
-                el.parentElement.parentElement.style.display = "none";
-            });
+        case "completed":
+            filter = 2;
             document.querySelectorAll(".done").forEach(el => {
                 el.parentElement.parentElement.style.display = "flex";
             });
+            document.querySelectorAll(".undo").forEach(el => {
+                el.parentElement.parentElement.style.display = "none";
+            });
+            break;
+    }
+}
+
+function submit() {
+    event.preventDefault();
+    addTask();
+    switch (filter) {
+        case 0:
+            buttons("all");
+            break;
+        case 1:
+            buttons("active");
+            break;
+        case 2:
+            buttons("completed");
             break;
     }
 }

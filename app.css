@@ -33,6 +33,7 @@ body {
     outline: none;
     background: none;
     cursor: pointer;
+    display: inline;
 }
 
 #taskList {
@@ -74,30 +75,28 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 30px 0;
 }
 
-.buttons a {
-    width: 10%;
-    min-width: 100px;
-    margin: 20px 0;
-}
-
-.buttons input {
+.buttons div {
     background: none;
     outline: none;
     cursor: pointer;
     height: 40px;
     border: 1px solid rgb(71, 238, 230);
     border-radius: 40px;
-    width: 100%;
+    width: 20%;
+    min-width: 100px;
+    text-align: center;
+    line-height: 2.5;
 }
 
-.buttons input:hover {
+.buttons div:hover {
     transition: all 0.25s;
     transform: scale(1.1);
 }
 
-.buttons input:focus {
+.buttons div:focus {
     background: rgb(180, 248, 245);
 }
 
