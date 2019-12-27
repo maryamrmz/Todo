@@ -9,9 +9,6 @@ var undoImage =
 
 var taskInput = document.getElementById("taskInput"),
     taskList = document.getElementById("taskList"),
-    all = document.querySelector(".all"),
-    active = document.querySelector(".active"),
-    completed = document.querySelector(".completed"),
     filter = 0;
 
 taskList.addEventListener("click", changesLi);
@@ -22,6 +19,18 @@ function addTask() {
     var li = createLi(taskInput.value);
     taskList.prepend(li);
     taskInput.value = "";
+
+    switch (filter) {
+        case 0:
+            buttons("all");
+            break;
+        case 1:
+            buttons("active");
+            break;
+        case 2:
+            buttons("completed");
+            break;
+    }
 }
 
 function createLi(title) {
@@ -79,6 +88,10 @@ function changesLi(e) {
         e.target.parentElement.parentElement.parentElement.querySelector(
             "a"
         ).title = "done";
+        if (filter === 1) {
+            e.target.parentElement.parentElement.parentElement.style.display =
+                "none";
+        }
     } else if (e.target.parentElement.classList.contains("done")) {
         var span = e.target.parentElement.parentElement.parentElement.querySelector(
             "span"
@@ -93,6 +106,10 @@ function changesLi(e) {
         e.target.parentElement.parentElement.parentElement.querySelector(
             "a"
         ).title = "undo";
+        if (filter === 2) {
+            e.target.parentElement.parentElement.parentElement.style.display =
+                "none";
+        }
     } else if (e.target.parentElement.classList.contains("edit")) {
         var span = e.target.parentElement.parentElement.parentElement.querySelector(
                 "span"
@@ -141,22 +158,6 @@ function buttons(event) {
             document.querySelectorAll(".undo").forEach(el => {
                 el.parentElement.parentElement.style.display = "none";
             });
-            break;
-    }
-}
-
-function submit() {
-    event.preventDefault();
-    addTask();
-    switch (filter) {
-        case 0:
-            buttons("all");
-            break;
-        case 1:
-            buttons("active");
-            break;
-        case 2:
-            buttons("completed");
             break;
     }
 }

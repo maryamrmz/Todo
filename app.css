@@ -33,7 +33,6 @@ body {
     outline: none;
     background: none;
     cursor: pointer;
-    display: inline;
 }
 
 #taskList {

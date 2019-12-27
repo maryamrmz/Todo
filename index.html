@@ -7,13 +7,13 @@
 
     <body>
         <div class="main">
-            <form class="task-form">
+            <form class="task-form" onsubmit="event.preventDefault();addTask()">
                 <input
                     id="taskInput"
                     placeholder="New task..."
                     autocomplete="off"
                 />
-                <div class="submit" onclick="submit()">Add Task</div>
+                <input class="submit" type="submit" value="Add Task" />
             </form>
             <div class="buttons">
                 <div class="all" onclick="buttons('all')">All</div>
